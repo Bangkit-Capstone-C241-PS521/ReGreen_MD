@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/navbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="657dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/account"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        app:srcCompat="@drawable/home"
+        android:onClick="home"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="374dp"
+        android:layout_height="523dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Bank Terdekat"
+        android:textStyle="bold"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="557dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

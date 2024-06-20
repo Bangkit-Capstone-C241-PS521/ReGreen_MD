@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5E8"
+    tools:context=".DriverFoundActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:srcCompat="@drawable/driver"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Ditemukan!"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#FF7777"
+        android:text="BATAL"
+        android:onClick="bataldriver"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#B8D2BB"
+        android:text="HOME"
+        android:onClick="home"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="629dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#xA;Nama Driver : Haider &#xA;&#xA;Plat Nomor : YZ 1234 MC&#xA;&#xA;Jenis Kendaraan : (Motor) Beat&#xA;&#xA;Estimasi : 2 Jam 35 Menit&#xA;&#xA;Status : Bersiap untuk menuju lokasi"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        tools:layout_editor_absoluteY="367dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
